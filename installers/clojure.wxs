@@ -34,8 +34,6 @@
                 </Directory>
             </Directory>
         </Directory>
-        <Binary Id="custom_actions.vbs" SourceFile="custom_actions.vbs" />
-        <CustomAction Id="CheckInstallEnvironment" Impersonate="yes" BinaryKey="custom_actions.vbs" VBScriptCall="Run_All"/>
 
         <Feature Id="Binaries" Level="1" Title="Clojure binaries" Description="Installs the latest deps.exe and ClojureTools">
             <ComponentRef Id="ClojureLauncher" />
